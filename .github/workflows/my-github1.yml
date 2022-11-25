@@ -15,7 +15,7 @@ jobs:
    
    steps:
      - name: Barev
-       id:  test
+       
        run: |
          echo "Barev inchx es"
        
@@ -24,8 +24,8 @@ jobs:
    
    needs: [my_testing]
    steps:
-     - name: inchx es
-       run: echo "Lav em, du inchx es"
+     - name: lav em
+       run: echo "Es el em lav, du inchx es"
        
    
    
