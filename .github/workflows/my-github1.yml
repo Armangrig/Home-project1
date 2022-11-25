@@ -11,11 +11,11 @@ on:
  
 jobs:
   my_testing:
-   runs-on: Windows
+   runs-on: ubuntu-latest
    
    steps:
      - name: Barev
-        run:echo "Barev inchx es"
+       run: echo "Barev inchx es"
         
         
         
