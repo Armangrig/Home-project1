@@ -1,0 +1,21 @@
+
+
+name: My Github Actions
+
+on:
+ 
+  push:
+    branches: 
+     - master
+      
+ 
+jobs:
+  my_testing:
+   runs-on: Windows
+   
+   steps:
+     - name: Barev
+        run: echo "Barev inchx es"
+        
+        
+        
