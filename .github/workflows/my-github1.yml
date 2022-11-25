@@ -16,6 +16,16 @@ jobs:
    steps:
      - name: Barev
        run: echo "Barev inchx es"
+       
+  my-testing2:
+   runs-on: ubuntu-latest
+   
+   steps:
+     - name: inchx es
+       run: echo "Lav em, du inchx es"
+       
+   
+   
         
         
         
