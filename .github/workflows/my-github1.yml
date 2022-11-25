@@ -11,9 +11,9 @@ on:
  
 jobs:
   my_testing:
-   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
    
-   steps:
+    steps:
      - name: Barev
        
        run: |
@@ -21,11 +21,11 @@ jobs:
        
   my-testing2:
   
-   runs-on: ubuntu-latest
+     runs-on: ubuntu-latest
    
-   needs: [my_testing]
+     needs: [my_testing]
    
-   steps:
+     steps:
      - name: lav em
        run: echo "Es el em lav, du inchx es"
        
