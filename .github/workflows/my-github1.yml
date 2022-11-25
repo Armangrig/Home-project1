@@ -20,9 +20,11 @@ jobs:
          echo "Barev inchx es"
        
   my-testing2:
+  
    runs-on: ubuntu-latest
    
    needs: [my_testing]
+   
    steps:
      - name: lav em
        run: echo "Es el em lav, du inchx es"
