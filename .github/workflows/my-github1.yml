@@ -16,7 +16,8 @@ jobs:
    steps:
      - name: Barev
        id:  test
-       run: echo "Barev inchx es"
+       run: |
+         echo "Barev inchx es"
        
   my-testing2:
    runs-on: ubuntu-latest
