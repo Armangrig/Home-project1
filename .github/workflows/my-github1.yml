@@ -15,7 +15,7 @@ jobs:
    
    steps:
      - name: Barev
-        run: echo "Barev inchx es"
+        run:echo "Barev inchx es"
         
         
         
