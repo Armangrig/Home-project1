@@ -15,7 +15,7 @@ jobs:
    
    steps:
      - name: Barev
-       id:  Noric barev
+       id:  test
        run: echo "Barev inchx es"
        
   my-testing2:
