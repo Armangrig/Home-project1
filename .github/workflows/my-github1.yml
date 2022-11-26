@@ -14,18 +14,14 @@ jobs:
     runs-on: ubuntu-latest
    
     steps:
-     - name: Barev
-       run: echo "Barev inchx es"
-       
-  my-testing2:
-  
-     runs-on: ubuntu-latest
+     
+       - id: Hello
+         run: "AA=Hello"
    
-     needs: [my_testing]
-   
-     steps:
-     - name: lav em
-       run: echo "Es el em lav, du inchx es"
+    
+     
+       - id: World
+         run: echo ${{ steps.Hello.AA.World }}
        
    
    
