@@ -16,12 +16,12 @@ jobs:
     steps:
      
        - id: Hello
-         run: "AA=Hello"
+         run: echo "AA=Hello" >> $GITHUB_OUTPUT
    
     
      
        - id: World
-         run: echo ${{ steps.Hello.AA.World }}
+         run: echo ${{ steps.Hello.outputs.AA }}
        
    
    
