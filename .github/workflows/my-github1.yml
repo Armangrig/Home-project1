@@ -1,5 +1,3 @@
-
-
 name: My Github Actions
 
 on:
@@ -15,16 +13,15 @@ jobs:
    
     steps:
      
-       - id: Hello
+       - id: 1w
          run: echo "AA=Hello" >> $GITHUB_OUTPUT
          
-       - id: World
+       - id: 2w
          run: echo "BB=world" >> $GITHUB_OUTPUT
-   
-    
+  
      
-       - id: out
-         run: echo ${{ steps.Hello.outputs.AA }} ${{ steps.World.outputs.BB }}
+    
+       - run: echo ${{ steps.1w.outputs.AA }} ${{ steps.2w.outputs.BB }}
        
    
    
