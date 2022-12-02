@@ -1,20 +1,15 @@
 name: My Github Actions
 
-on:
- 
-  push:
-    branches: 
-     - main
-      
- 
+on:[push]
 
-import "fmt"
+    steps:
 
-func helloworld() string {
-	return "Hello World!!"
-}
+       - id: 1w
+         run: echo "AA=Hello" >> $GITHUB_OUTPUT
 
-func main() {
-	fmt.Println(helloworld())
-}
+       - id: 2w
+         run: echo "BB=world" >> $GITHUB_OUTPUT
 
+
+
+       - run: echo ${{ steps.1w.outputs.AA }} ${{ steps.2w.outputs.BB }}
