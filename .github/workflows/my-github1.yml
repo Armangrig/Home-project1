@@ -12,13 +12,17 @@ jobs:
     runs-on: macos-12
    
     steps:
-     - name: condition 1
-       if: runner.os == 'Windows'
-       run: echo "The operating system on the runner is $RUNNER_OS "
-     
-     - name: condition 2
-       if: runner.os != 'Windows'
-       run: echo "The operating system on the runner is not Windows, it's $RUNNER_OS "
+
+       - id: 1w
+         run: echo "AA=Hello" >> $GITHUB_OUTPUT
+
+       - id: 2w
+         run: echo "BB=world" >> $GITHUB_OUTPUT
+
+
+
+       - run: echo ${{ steps.1w.outputs.AA }} ${{ steps.2w.outputs.BB }}
+   
      
        
    
