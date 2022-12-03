@@ -2,7 +2,10 @@ name: My Github Actions
 
 on:[push]
 
-    steps:
+ jobs: 
+   steps:
+    
+    
 
        - id: 1w
          run: echo "AA=Hello" >> $GITHUB_OUTPUT
