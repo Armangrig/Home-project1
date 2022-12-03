@@ -2,7 +2,7 @@ name: Go workflow
 
 on:[push]
 
- jobs: 
+jobs: 
    steps:
     
     
