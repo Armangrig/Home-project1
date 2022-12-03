@@ -1,22 +1,18 @@
 name: Go workflow
 
-on:[push]
+on: [push]
 
 jobs: 
+
    steps:
     
-    
+         - id: 1w
+           run: echo "AA=Hello" >> $GITHUB_OUTPUT
 
-       - id: 1w
-         run: echo "AA=Hello" >> $GITHUB_OUTPUT
-
-       - id: 2w
-         run: echo "BB=world" >> $GITHUB_OUTPUT
+         - id: 2w
+           run: echo "BB=world" >> $GITHUB_OUTPUT
 
 
 
-       - run: echo ${{ steps.1w.outputs.AA }} ${{ steps.2w.outputs.BB }}
+         - run: echo ${{ steps.1w.outputs.AA }} ${{ steps.2w.outputs.BB }}
        
-       - name: Setup Go environment
-         uses: actions/setup-go@v3.4.0
-  
